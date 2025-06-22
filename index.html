@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping App part1</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    .Online-ShoppingApp-Container {
+      max-width: 800px;
+      background-color: white;
+      margin: 10px auto;
+      box-shadow: 0 4px 8px 0 gray;
+      padding: 10px;
+    }
+    body {
+      background-color: rgb(188, 187, 187);
+    }
+
+    .product-row {
+      display: flex;
+      justify-content: space-between;
+
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 5px;
+      align-items: center;
+      margin: 10px;
+    }
+    h2 {
+      margin: 10px 0;
+    }
+    button {
+      background-color: rgb(39, 39, 247);
+      padding: 10px 30px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: rgb(24, 24, 174);
+    }
+    #feedback {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      background-color: purple;
+      color: white;
+    }
+    #totalPrice {
+      text-align: right;
+    }
+  </style>
+  <body>
+    <div class="Online-ShoppingApp-Container">
+      <h1>Online Shopping App</h1>
+      <p id="feedback"></p>
+      <h2>Available Products</h2>
+      <div id="productContainer">
+        <!-- <div class="product-row">
+          <span>1.Laptop - 50000</span>
+          <button>Add Now</button>
+        </div> -->
+      </div>
+      <h2>My Cart</h2>
+      <div id="cartContainer">
+        <!-- <div class="product-row">
+            <span>1.Laptop - 50000</span>
+            <button id="testingBtn">Add Now</button>
+          </div> -->
+      </div>
+      <h2 id="totalPrice">Rs.0</h2>
+      <h2>Actions</h2>
+      <button id="sortingButton">Sort By Price</button>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- style:- box-shodow:horizontaloffset,vertical-offset,blur-radius,spread-radius. -->
+<!-- span tag is acts like inline block elements -->
